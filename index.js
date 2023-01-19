@@ -5,7 +5,7 @@ const logger = require("./middleware/logger")
 const error404 = require("./404.js")
 const moviesRouter = require("./routes/movies")
 
-const port = 5000
+const port = process.env.PORT || 5000;
 
 app.use(logger)
 app.use(cors())
